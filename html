@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tarwi Energy | Proyecto Científico</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#0f5132;
+--secondary:#198754;
+--accent:#d4af37;
+--light:#f5f9f6;
+--dark:#1e293b;
+--white:#ffffff;
+--shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:#333;
+overflow-x:hidden;
+}
+
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+.hero{
+max-width:1000px;
+}
+
+.hero h1{
+font-size:5rem;
+font-weight:800;
+letter-spacing:2px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.3rem;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:var(--accent);
+color:black;
+font-weight:700;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+nav{
+position:sticky;
+top:0;
+z-index:999;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+flex-wrap:wrap;
+}
+
+nav ul li{
+margin:15px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:var(--primary);
+font-weight:600;
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:2.8rem;
+color:var(--primary);
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#666;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:var(--shadow);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.stat{
+background:white;
+padding:35px;
+text-align:center;
+border-radius:20px;
+box-shadow:var(--shadow);
+}
+
+.stat h3{
+font-size:3rem;
+color:var(--secondary);
+}
+
+.highlight{
+color:var(--accent);
+font-weight:700;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+box-shadow:var(--shadow);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:var(--shadow);
+border-radius:15px;
+overflow:hidden;
+}
+
+table th{
+background:var(--primary);
+color:white;
+padding:15px;
+}
+
+table td{
+padding:15px;
+border-bottom:1px solid #ddd;
+}
+
+.timeline{
+position:relative;
+max-width:1000px;
+margin:auto;
+}
+
+.timeline::after{
+content:'';
+position:absolute;
+width:6px;
+background:var(--secondary);
+top:0;
+bottom:0;
+left:50%;
+margin-left:-3px;
+}
+
+.step{
+padding:20px 40px;
+position:relative;
+width:50%;
+}
+
+.step.left{
+left:0;
+}
+
+.step.right{
+left:50%;
+}
+
+.step-content{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:var(--shadow);
+}
+
+footer{
+background:var(--dark);
+color:white;
+text-align:center;
+padding:40px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.timeline::after{
+left:20px;
+}
+
+.step{
+width:100%;
+padding-left:60px;
+padding-right:20px;
+}
+
+.step.right{
+left:0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="hero">
+
+<h1>TARWI ENERGY</h1>
+
+<p>
+Proyecto científico sobre el aprovechamiento integral del
+Tarwi (Chocho), una leguminosa andina de alto valor nutricional,
+utilizada para la elaboración de harina, leche vegetal y productos
+alimenticios innovadores.
+</p>
+
+<a href="#introduccion" class="btn">
+Explorar Proyecto
+</a>
+
+</div>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="#introduccion">Introducción</a></li>
+<li><a href="#origen">Origen</a></li>
+<li><a href="#nutricion">Nutrición</a></li>
+<li><a href="#beneficios">Beneficios</a></li>
+<li><a href="#metodologia">Metodología</a></li>
+<li><a href="#productos">Productos</a></li>
+<li><a href="#resultados">Resultados</a></li>
+<li><a href="#equipo">Equipo</a></li>
+</ul>
+</nav>
+
+<section id="introduccion">
+
+<div class="section-title">
+<h2>Introducción</h2>
+<p>Investigación sobre el potencial nutricional y tecnológico del Tarwi</p>
+</div>
+
+<div class="about">
+
+<div>
+
+<h3>¿Qué es el Tarwi?</h3>
+
+<br>
+
+<p>
+El Tarwi o Chocho (<i>Lupinus mutabilis</i>) es una leguminosa
+originaria de los Andes sudamericanos.
+Ha sido cultivada desde épocas preincaicas y constituye una de las
+fuentes vegetales más ricas en proteínas disponibles en la región.
+</p>
+
+<br>
+
+<p>
+Su importancia radica en su extraordinario contenido nutricional,
+su adaptación a climas andinos y su potencial para contribuir
+a la seguridad alimentaria mediante la elaboración de productos
+innovadores y saludables.
+</p>
+
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Lupinus_mutabilis.jpg" alt="Tarwi">
+
+</div>
+
+</section>
