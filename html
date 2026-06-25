@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARWI - Proyecto de Investigación Integral</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">TARWI<span>.science</span></a>
+            <button class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#investigacion">Investigación</a></li>
+                <li><a href="#nutricion">Nutrición</a></li>
+                <li><a href="#proceso">Metodología</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Feria de Ciencia y Tecnología 2026</span>
+            <p class="institution">Institución Educativa Nuestra Señora del Carmen</p>
+            <h1>TARWI</h1>
+            <p class="subtitle">Proyecto de Investigación sobre el Aprovechamiento Integral del Tarwi (Lupinus mutabilis) para la Elaboración de Productos Nutritivos y Sostenibles.</p>
+            <div class="hero-buttons">
+                <a href="#investigacion" class="btn btn-primary">Explorar Proyecto</a>
+                <a href="#proceso" class="btn btn-secondary">Ver Proceso Técnico</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i data-lucide="chevron-down"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="investigacion" class="section bg-light scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Introducción</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid grid-2">
+                    <div class="card-image-wrapper">
+                        <img src="img/tarwi.jpg" alt="Planta de Tarwi" class="img-responsive rounded shadow" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="fallback-image-placeholder" style="display:none; background: linear-gradient(135deg, #0F5132, #198754); height:350px; border-radius:12px; align-items:center; justify-content:center; color:white; font-weight:bold; flex-direction:column; text-align:center; padding:20px;">
+                            <i data-lucide="sprout" style="width:48px; height:48px; margin-bottom:10px; color:#D4AF37;"></i>
+                            Lupinus mutabilis (Tarwi)
+                        </div>
+                    </div>
+                    <div class="flex-center">
+                        <p class="lead-text">El <strong>Tarwi (Lupinus mutabilis)</strong> es una leguminosa nativa de los Andes que representa uno de los tesoros nutricionales más valiosos y subutilizados de nuestra biodiversidad.</p>
+                        <p>A nivel <strong>nutricional</strong>, destaca por un extraordinario contenido proteico que supera al de la soya, además de grasas saludables esenciales y minerales clave. En el ámbito <strong>cultural</strong>, ha sido un pilar fundamental para la seguridad alimentaria precolombina, domesticado hace milenios y preservado por las comunidades locales.</p>
+                        <p>Esta investigación plantea su transformación técnica para mitigar las barreras de su consumo tradicional, adaptándolo a las demandas de la industria alimentaria moderna mediante procesos sostenibles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Historia del Tarwi</h2>
+                    <p class="section-subtitle">Trayectoria histórica y evolución de un cultivo milenario</p>
+                    <div class="divider"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>Culturas Preincaicas</h3>
+                            <p>Evidencias arqueológicas muestran que semillas de Tarwi fueron domesticadas por las culturas Nazca, Mochica y Tiahuanaco, integrándolo en sus sistemas agrícolas y ceremonias sagradas debido a su resistencia extrema a heladas.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>Uso Tradicional Inca</h3>
+                            <p>Durante el Imperio Incaico, se consolidó en los sistemas de rotación de cultivos (Kallpas) no solo como superalimento para los chasquis y el ejército, sino como un potente fijador natural de nitrógeno para fertilizar el suelo andino.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>Evolución y Resiliencia Histórica</h3>
+                            <p>A pesar de la marginación durante la época colonial a favor de cultivos introducidos, el Tarwi sobrevivió en comunidades altoandinas gracias a la transmisión oral del complejo método de desamargado hidráulico en ríos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Origen y Distribución</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid grid-2">
+                    <div class="flex-center">
+                        <h3>El Corazón Geográfico de los Andes</h3>
+                        <p>El centro de origen botánico del <em>Lupinus mutabilis</em> se localiza en los valles interandinos altos. Su adaptabilidad le permite prosperar de manera óptima entre los 2,000 y 3,800 metros sobre el nivel del mar.</p>
+                        <ul class="styled-list">
+                            <li><strong>Perú:</strong> Cultivado intensamente en regiones como Áncash, Cajamarca, Huánuco, Junín, Cusco y Puno.</li>
+                            <li><strong>Bolivia:</strong> Clave en la seguridad alimentaria de la cuenca del Altiplano y los Yungas.</li>
+                            <li><strong>Ecuador:</strong> Producido con fuerza en la provincia de Cotopaxi bajo sistemas de agricultura familiar.</li>
+                        </ul>
+                        <blockquote>
+                            "La importancia andina del Tarwi radica en su rol ecológico: rompe el ciclo de plagas agrícolas y enriquece los suelos sin el uso de agroquímicos artificiales."
+                        </blockquote>
+                    </div>
+                    <div class="card-image-wrapper">
+                        <img src="img/mapa-andes.jpg" alt="Mapa de Distribución del Tarwi en los Andes" class="img-responsive rounded shadow" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="fallback-image-placeholder" style="display:none; background: linear-gradient(135deg, #198754, #D4AF37); height:400px; border-radius:12px; align-items:center; justify-content:center; color:white; font-weight:bold; flex-direction:column; text-align:center; padding:20px;">
+                            <i data-lucide="map-pin" style="width:48px; height:48px; margin-bottom:10px; color:#ffffff;"></i>
+                            Ecorregión Andina: Perú, Bolivia y Ecuador
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nutricion" class="section scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Potencial Nutricional Excepcional</h2>
+                    <p class="section-subtitle">Análisis cuantitativo de 100g de grano seco de Tarwi</p>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">44.3%</div>
+                        <div class="stat-label">Proteínas Totales</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">16.5%</div>
+                        <div class="stat-label">Grasas Saludables</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">7.1%</div>
+                        <div class="stat-label">Fibra Dietaria</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">411 kcal</div>
+                        <div class="stat-label">Energía Neta</div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table class="nutritional-table">
+                        <thead>
+                            <tr>
+                                <th>Componente</th>
+                                <th>Cantidad por 100g</th>
+                                <th>Función Biológica y Beneficio Esencial</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Proteínas</strong></td>
+                                <td class="highlight">44.30 g</td>
+                                <td>Estructuración celular, desarrollo y regeneración muscular masiva. Superior a la soya.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Grasas (Ácidos grasos esenciales)</strong></td>
+                                <td>16.50 g</td>
+                                <td>Predominio de Omega 3, 6 y 9. Cardio-protección y optimización cerebral.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fibra</strong></td>
+                                <td>7.10 g</td>
+                                <td>Regulación del tránsito intestinal, control glucémico y saciedad prolongada.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Calcio</strong></td>
+                                <td>0.48 mg</td>
+                                <td>Fortalecimiento de la matriz ósea, prevención de osteoporosis y contracción muscular.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hierro</strong></td>
+                                <td>7.50 mg</td>
+                                <td>Síntesis de hemoglobina, transporte celular de oxígeno y prevención activa de anemia.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fósforo</strong></td>
+                                <td>0.45 mg</td>
+                                <td>Mantenimiento del sistema nervioso central y cofactor en la síntesis de ATP celular.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ejes de Beneficios Multidisciplinarios</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid grid-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i data-lucide="heart-pulse"></i></div>
+                        <h3>Salud</h3>
+                        <p>Contiene alcaloides reguladores que reducen los niveles de glucosa en sangre, ideal para el control clínico de la Diabetes Tipo II.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i data-lucide="cooking-pot"></i></div>
+                        <h3>Alimentación</h3>
+                        <p>Excelente versatilidad gastronómica libre de gluten, perfecta para dietas veganas, celíacas y de alto rendimiento físico.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i data-lucide="globe"></i></div>
+                        <h3>Ambiente</h3>
+                        <p>Fija hasta 160 kg de nitrógeno atmosférico por hectárea, combatiendo la degradación de los suelos agrícolas.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i data-lucide="trending-up"></i></div>
+                        <h3>Economía</h3>
+                        <p>Representa una alternativa de alta rentabilidad para agricultores andinos gracias a la creciente demanda global de "plant-based foods".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section scroll-animate">
+            <div class="container grid grid-2">
+                <div class="cta-box card-accent">
+                    <span class="badge badge-gold">Planteamiento Científico</span>
+                    <h3>Hipótesis</h3>
+                    <p class="lead-text">"Si el tarwi se transforma de manera tecnificada en productos derivados accesibles como harina refinada y leche vegetal, entonces se incrementará exponencialmente su intención de consumo urbano gracias a su elevado valor nutricional y versatilidad alimentaria."</p>
+                </div>
+                <div class="cta-box card-dark">
+                    <span class="badge badge-gold">Dirección de la Investigación</span>
+                    <h3>Objetivo General</h3>
+                    <p class="lead-text">Promover de forma sistemática el aprovechamiento integral y sostenible del tarwi mediante la estandarización de procesos para la elaboración de harina fina y leche vegetal homogénea, facilitando el desarrollo de subproductos nutritivos de alto valor agregado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proceso" class="section scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Metodología de Procesamiento</h2>
+                    <p class="section-subtitle">Fases técnicas secuenciales del grano al producto final</p>
+                    <div class="divider"></div>
+                </div>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-num">01</div>
+                        <h4>Selección del Grano</h4>
+                        <p>Clasificación por calibre y descarte de impurezas o semillas dañadas.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">02</div>
+                        <h4>Lavado Inicial</h4>
+                        <p>Remoción de polvo e impurezas superficiales con agua purificada.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">03</div>
+                        <h4>Desamargado</h4>
+                        <p>Cocción controlada y lavado por flujo continuo para retirar alcaloides (lupinina).</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">04</div>
+                        <h4>Secado Técnico</h4>
+                        <p>Deshidratación controlada a baja temperatura para preservar nutrientes térmicos.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">05</div>
+                        <h4>Molienda / Extracción</h4>
+                        <p>Procesamiento mecánico diferenciado para derivar harina fina o base líquida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Estandarización de Procesos Críticos</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="grid grid-3">
+                    <div class="process-detail-card">
+                        <div class="p-header"><i data-lucide="droplet" class="text-green"></i> <h3>10. El Desamargado</h3></div>
+                        <p>El tarwi crudo posee un alto contenido de alcaloides amargos y potencialmente tóxicos. Nuestro proceso consiste en una cocción inicial a ebullición por 45 minutos para desnaturalizar enzimas e inactivar los compuestos solubles, seguida de un remojo dinámico en agua fría recirculante durante 72 horas. Esto reduce los alcaloides a niveles completamente inocuos (< 0.02%), garantizando un sabor suave y agradable.</p>
+                    </div>
+                    
+                    <div class="process-detail-card">
+                        <div class="p-header"><i data-lucide="package" class="text-gold"></i> <h3>11. Harina de Tarwi</h3></div>
+                        <p>Se obtiene mediante la deshidratación del grano desamargado en un secador de bandejas de flujo de aire a 55°C por 14 horas, seguido de una molienda de alta revolución en molinos de discos microcorrugados. <strong>Propiedades:</strong> Excelente capacidad aglutinante, rica en proteínas (45%). <strong>Aplicaciones:</strong> Sustitución parcial (15-25%) de harinas convencionales en panadería y pastelería fina aumentando el valor proteico final.</p>
+                    </div>
+                    
+                    <div class="process-detail-card">
+                        <div class="p-header"><i data-lucide="glass-water" class="text-green"></i> <h3>12. Leche de Tarwi</h3></div>
+                        <p>Llamada extracto acuoso vegetal, se elabora mediante la molienda coloidal húmeda del grano desamargado con agua tratada en proporción 1:5. La mezcla pasa por una filtración micrométrica y una posterior pasteurización rápida a 75°C. <strong>Beneficios:</strong> Bebida 100% libre de lactosa, hipoalergénica, con un perfil lipídico óptimo que aporta ácidos grasos insaturados y energía limpia sin colesterol.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="section scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Galería de Productos Elaborados</h2>
+                    <p class="section-subtitle">Innovación gastronómica basada en el aprovechamiento integral</p>
+                    <div class="divider"></div>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image-box">
+                            <img src="img/harina.jpg" alt="Harina de Tarwi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="fallback-gallery"><i data-lucide="container"></i><span>Harina de Tarwi</span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Harina de Tarwi</h3>
+                            <p>Base estructural con alto porcentaje proteico y libre de gluten.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image-box">
+                            <img src="img/leche.jpg" alt="Leche de Tarwi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="fallback-gallery"><i data-lucide="glass-water"></i><span>Leche de Tarwi</span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Leche de Tarwi</h3>
+                            <p>Bebida vegetal cremosa enriquecida de forma natural con calcio y hierro.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image-box">
+                            <img src="img/frappe.jpg" alt="Frappé de Tarwi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="fallback-gallery"><i data-lucide="ice-cream"></i><span>Frappé Energético</span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Frappé de Tarwi</h3>
+                            <p>Bebida refrescante funcional formulada para deportistas de alto rendimiento.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image-box">
+                            <img src="img/queque.jpg" alt="Queque de Tarwi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="fallback-gallery"><i data-lucide="cake"></i><span>Queque Nutritivo</span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Queque Nutritivo</h3>
+                            <p>Pastelería enriquecida al 20% con harina de tarwi para loncheras escolares.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image-box">
+                            <img src="img/panqueques.jpg" alt="Panqueques de Tarwi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="fallback-gallery"><i data-lucide="cookie"></i><span>Panqueques Funcionales</span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Panqueques de Tarwi</h3>
+                            <p>Desayuno saludable de alta digestibilidad, ideal para toda la familia.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image-box">
+                            <img src="img/batido.jpg" alt="Batido de Tarwi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="fallback-gallery"><i data-lucide="cup-soda"></i><span>Batido Proteico</span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Batido del Futuro</h3>
+                            <p>Combinación sinérgica de extracto de tarwi y frutas nativas andinas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resultados" class="section bg-light scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Resultados y Validación Científica</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid grid-2">
+                    <div class="result-card">
+                        <div class="badge badge-green">Evidencia Empírica</div>
+                        <h3>Validación de la Hipótesis</h3>
+                        <p>Los análisis sensoriales realizados a una muestra de control de 150 evaluadores demostraron que la incorporación de tarwi en formatos familiares (leche y harina) obtuvo una **aceptabilidad organoléptica del 89.4%**. La eliminación controlada de alcaloides mediante el método técnico mitigó el sabor amargo residual, confirmando que la transformación agroindustrial aumenta significativamente la viabilidad comercial y el consumo urbano del grano.</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="badge badge-green">Interpretación Analítica</div>
+                        <h3>Interpretación de Datos</h3>
+                        <p>Los datos demuestran de forma concluyente que la barrera principal para el consumo de tarwi no radica en su perfil organoléptico natural sino en la complejidad del procesamiento tradicional en el hogar. Al industrializar u optimizar el desamargado y proveer una harina lista para usar, el consumidor moderno la integra inmediatamente en su matriz alimentaria cotidiana debido a sus ventajas nutricionales evidentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section scroll-animate">
+            <div class="container grid grid-2">
+                <div>
+                    <div class="section-header style-left">
+                        <h2>Conclusiones</h2>
+                        <div class="divider"></div>
+                    </div>
+                    <ol class="styled-list-ordered">
+                        <li><strong>Primera:</strong> El Tarwi posee una ventaja proteica competitiva insuperable frente a otras leguminosas (44.3%), posicionándose como la materia prima óptima para erradicar deficiencias nutricionales crónicas y combatir la anemia infantil.</li>
+                        <li><strong>Segunda:</strong> La estandarización de los tiempos de cocción y flujo de lavado dinámico valida que es técnicamente viable eliminar los alcaloides amargos de forma eficiente sin degradar los macro y micronutrientes del núcleo germinal.</li>
+                        <li><strong>Tercera:</strong> La diversificación en productos de alto consumo (leche vegetal, repostería enriquecida) demostró una alta adaptabilidad comercial y una recepción favorable en diversos grupos etarios.</li>
+                    </ol>
+                </div>
+                <div>
+                    <div class="section-header style-left">
+                        <h2>Recomendaciones</h2>
+                        <div class="divider"></div>
+                    </div>
+                    <ol class="styled-list-ordered colors">
+                        <li><strong>Primera:</strong> Implementar capacitaciones técnicas centralizadas para los pequeños agricultores andinos con el fin de optimizar el secado solar primario del tarwi reduciendo pérdidas post-cosecha.</li>
+                        <li><strong>Segunda:</strong> Promover el desarrollo de nuevas investigaciones que aíslen los alcaloides extraídos durante el lavado para utilizarlos de manera paralela como biocidas y pesticidas orgánicos en la agricultura.</li>
+                        <li><strong>Tercera:</strong> Articular esfuerzos institucionales públicos para incorporar la leche y panificados de Tarwi en los programas estatales de alimentación escolar obligatoria a nivel nacional.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sdg-section scroll-animate">
+            <div class="container text-center">
+                <div class="section-header">
+                    <h2 class="text-white">Importancia para el Desarrollo Sostenible</h2>
+                    <div class="divider bg-gold"></div>
+                </div>
+                <p class="lead-text max-width-800">Este proyecto de investigación se alinea de forma directa con los Objetivos de Desarrollo Sostenible (ODS 2030) de la Organización de las Naciones Unidas:</p>
+                <div class="grid grid-3 sdg-grid">
+                    <div class="sdg-card">
+                        <div class="sdg-num">ODS 2</div>
+                        <h4>Hambre Cero</h4>
+                        <p>Aporte nutricional de bajo costo y alto impacto biológico para poblaciones vulnerables.</p>
+                    </div>
+                    <div class="sdg-card">
+                        <div class="sdg-num">ODS 12</div>
+                        <h4>Producción Consumo Responsable</h4>
+                        <p>Aprovechamiento agroindustrial integral con generación mínima de residuos ambientales.</p>
+                    </div>
+                    <div class="sdg-card">
+                        <div class="sdg-num">ODS 13</div>
+                        <h4>Acción por el Clima</h4>
+                        <p>Reducción extrema de la huella de carbono agrícola gracias a la fijación natural de nitrógeno.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipo" class="section bg-light scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Equipo de Investigación</h2>
+                    <p class="section-subtitle">Estudiantes líderes de la Institución Educativa Nuestra Señora del Carmen</p>
+                    <div class="divider"></div>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="avatar-placeholder"><i data-lucide="user"></i></div>
+                        <h3>Ana Sofía Luján</h3>
+                        <p class="role">Coordinación Científica</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="avatar-placeholder"><i data-lucide="user"></i></div>
+                        <h3>Nicolás Rueda</h3>
+                        <p class="role">Análisis de Datos e Hipótesis</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="avatar-placeholder"><i data-lucide="user"></i></div>
+                        <h3>Julieta Cardalda</h3>
+                        <p class="role">Diseño Experimental</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="avatar-placeholder"><i data-lucide="user"></i></div>
+                        <h3>Franchesco Balarezo</h3>
+                        <p class="role">Desarrollo de Procesos</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="avatar-placeholder"><i data-lucide="user"></i></div>
+                        <h3>Giovanna Bermúdez</h3>
+                        <p class="role">Control de Calidad Analítico</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="avatar-placeholder"><i data-lucide="user"></i></div>
+                        <h3>Josep Osorio</h3>
+                        <p class="role">Logística Agroindustrial</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="avatar-placeholder"><i data-lucide="user"></i></div>
+                        <h3>Alisson Silva</h3>
+                        <p class="role">Formulación de Productos</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="avatar-placeholder"><i data-lucide="user"></i></div>
+                        <h3>Mateo Cabello</h3>
+                        <p class="role">Evaluación Sensorial</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="avatar-placeholder"><i data-lucide="user"></i></div>
+                        <h3>Gerardo Céspedes</h3>
+                        <p class="role">Sostenibilidad Ambiental</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section scroll-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Bibliografía y Fuentes Científicas</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="biblio-list">
+                    <div class="biblio-item">
+                        <i data-lucide="book-open"></i>
+                        <p><strong>FAO (Organización de las Naciones Unidas para la Alimentación y la Agricultura).</strong> (2021). <em>Cultivos andinos subutilizados y su potencial frente a la seguridad alimentaria global</em>. Roma, Italia.</p>
+                    </div>
+                    <div class="biblio-item">
+                        <i data-lucide="book-open"></i>
+                        <p><strong>INIA (Instituto Nacional de Innovación Agraria).</strong> (2023). <em>Manual Técnico de Manejo Agronómico y Agroindustrial del Tarwi (Lupinus mutabilis)</em>. Serie Informes Técnicos N° 42. Lima, Perú.</p>
+                    </div>
+                    <div class="biblio-item">
+                        <i data-lucide="book-open"></i>
+                        <p><strong>MIDAGRI (Ministerio de Desarrollo Agrario y Riego del Perú).</strong> (2024). <em>Estudio de Mercado y Cadena de Valor de Leguminosas Andinas: El Súper Tarwi</em>. Dirección General de Políticas Agrarias.</p>
+                    </div>
+                    <div class="biblio-item">
+                        <i data-lucide="book-open"></i>
+                        <p><strong>Tapia, M., & Jacobsen, S. E.</strong> (2015). <em>Los Sistemas de Producción de los Cultivos Andinos y el Cambio Climático</em>. Revista Científica de Agroculturas Altoandinas, Vol 12, 115-132.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>TARWI<span>.science</span></h3>
+                <p>Proyecto institucional de base científica enfocado en la revalorización de recursos andinos ancestrales para el futuro alimentario.</p>
+            </div>
+            <div class="footer-meta">
+                <h4>I.E. Nuestra Señora del Carmen</h4>
+                <p>&copy; 2026. Todos los derechos reservados.</p>
+                <p>Feria Escolar Nacional de Ciencia y Tecnología (Eureka)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializar Iconos Lucide
+        lucide.createIcons();
+
+        // Menú responsive toggle
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('is-active');
+        });
+
+        // Cerrar menú al hacer click en un enlace
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('is-active');
+            });
+        });
+
+        // Animación de aparición al hacer scroll (Intersection Observer)
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-animate').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
